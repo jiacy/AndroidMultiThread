@@ -9,27 +9,14 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <Button
-            android:id="@+id/asynctest"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="AsyncTask测试"/>
-
-        <Button
-            android:layout_below="@+id/asynctest"
+        <TextView
             android:layout_centerInParent="true"
-            android:id="@+id/handlerthread"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="HandlerThread测试"/>
-
-        <Button
-            android:layout_below="@+id/handlerthread"
-            android:layout_centerInParent="true"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/fetch_thread"
-            android:text="fetchThread测试"/>
+            android:id="@+id/texting"
+            android:text="huilv"/>
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

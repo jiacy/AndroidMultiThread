@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button ayncbutton = (Button) findViewById(R.id.asynctest);
         Button handlerbutton = (Button) findViewById(R.id.handlerthread);
+        Button fetchbutton = (Button) findViewById(R.id.fetch_thread);
 
         ayncbutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +33,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ThreadHandlerActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        fetchbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FetchThreadActivity.class);
                 startActivity(intent);
             }
         });

@@ -20,6 +20,8 @@
             android:screenOrientation="portrait"></activity>
         <activity android:name=".ThreadHandlerActivity"
             android:screenOrientation="portrait"></activity>
+        <activity android:name=".FetchThreadActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
