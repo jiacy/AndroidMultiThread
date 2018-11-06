@@ -22,23 +22,14 @@
         android:layout_height="wrap_content"
         android:text="scaleType:fitCenter，按比例缩放" />
 
-    <com.ss.android.image.AsyncImageView
-        android:id="@+id/comment_ad_image"
+
+    <ImageView
+        android:id="@+id/imageview2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="5dp"
-        app:actualImageScaleType="fitXY"
-        android:visibility="gone"/>
-
-
-    <!--<ImageView-->
-        <!--android:id="@+id/imageview2"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="200dp"-->
-        <!--android:background="#FFF"-->
-        <!--android:padding="10dp"-->
-        <!--android:scaleType="fitCenter"-->
-        <!--android:src="@drawable/green" />-->
+        android:layout_height="200dp"
+        android:background="#FFF"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/green" />
 
 </LinearLayout>
