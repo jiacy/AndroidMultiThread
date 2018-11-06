@@ -30,11 +30,11 @@ public class FetchThreadActivity extends AppCompatActivity {
             @Override
             public void handleMessage(Message msg) {
                 SystemClock.sleep(1000);
+                double value = new Random().nextDouble() * 10;
+                final String price = xiaoshuToString(value);
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        double value = new Random().nextDouble() * 10;
-                        String price = xiaoshuToString(value);
                         tv.setText("美元汇率："+price);
                         Log.e(TAG,"美元汇率："+price);
                     }

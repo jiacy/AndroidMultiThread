@@ -30,6 +30,30 @@
             android:layout_height="wrap_content"
             android:id="@+id/fetch_thread"
             android:text="fetchThread测试"/>
+
+        <Button
+            android:layout_below="@+id/fetch_thread"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/runnable"
+            android:text="Runnable卖票测试"/>
+
+        <Button
+            android:layout_below="@+id/runnable"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewtest"
+            android:text="测试View的onClick和onTouch"/>
+
+        <Button
+            android:layout_below="@+id/viewtest"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageview"
+            android:text="测试ImageView"/>
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
