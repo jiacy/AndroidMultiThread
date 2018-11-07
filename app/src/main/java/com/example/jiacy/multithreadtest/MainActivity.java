@@ -9,13 +9,16 @@ import android.widget.Button;
 import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
-
+    private CustomApplication app;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
+        app = (CustomApplication)getApplication();
+        app.setValue("HarveyTest");
+        Log.i("MainAcitivity", "初始值=" + app.getValue());
         Button ayncbutton = (Button) findViewById(R.id.asynctest);
         Button handlerbutton = (Button) findViewById(R.id.handlerthread);
         Button fetchbutton = (Button) findViewById(R.id.fetch_thread);
